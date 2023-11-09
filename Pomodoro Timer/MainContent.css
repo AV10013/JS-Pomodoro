@@ -1,0 +1,67 @@
+/* $color: #9075D8;
+$coloralt: #a68af2; */
+
+
+.pomodoro-timer{
+    justify-content: center;
+    padding: 24px 32px;
+    border-radius: 32px;
+    background: #a68af2;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: -50px 0 0 -240px;
+    display: flex;
+}
+
+
+
+.timer__part__hours, .timer__part__minutes, .timer__part__seconds, .timer__part{
+    font-size: 56px;
+    color: white;
+}
+
+.timer__btn__play, .timer__btn__reset, .timer__btn__pause, .flowtime__timer__btn__play, .flowtime__timer__btn__pause{
+    width: 50px;
+    height: 50px;
+    margin-left: 16px;
+    border-radius: 50%;
+    border: none;
+    color: #a68af2;
+    background: white;
+    cursor: pointer;
+}
+
+.timer__title, .flowtime__timer__title{
+    color: white;
+    white-space: no-wrap;
+}
+
+.timer__status{
+    font-size: 9px;
+    justify-content: center;
+    padding: 24px 32px;
+    border-radius: 32px;
+    background: #a68af2;
+    position: absolute;
+    top: 150%;
+    left: 55%;
+    margin: -50px 0 0 -240px;
+    white-space: no-wrap;
+    display: flex;
+}
+
+.flowtime-timer{
+    justify-content: center;
+    font-size: 10px;
+    padding: 24px 32px;
+    border-radius: 32px;
+    background: #a68af2;
+    position: absolute;
+    top: 45%;
+    left: 42%;
+    margin: -50px 0 0 -240px;
+    display: flex;
+}
+
+

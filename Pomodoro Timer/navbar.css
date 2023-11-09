@@ -1,0 +1,157 @@
+/* $color: #9075D8;
+$coloralt: #a68af2; */
+
+
+/* *,
+*before::,
+*after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color:  #9075D8;
+    min-width : 780px;
+    min-height: 560px;
+}
+
+.nav{
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0px 2.9852px 7.4564px rgba(0,0,0,0.1);
+    top: 20px;
+    max-width: 780px;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 5rem;
+    color: white;
+    white-space: nowrap;
+}
+
+.nav__listlogo{
+    list-style: none;
+    margin-right: 50px;
+}
+
+.nav__icon{
+    width: 2.5rem;
+}
+
+
+.nav__listitem{
+    list-style:none;
+    font-weight: bold;
+    position: relative;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+}
+
+.nav__listitem:focus ul{
+    opacity: 1; 
+    visibility: visible;
+}
+
+.nav__listitem:hover ul{
+    opacity: 1; 
+    visibility: visible;
+}
+
+.nav__listitem__settings{
+    list-style:none;
+    font-weight: bold;
+    position: relative;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+}
+
+.nav__listitem__settings::after{
+    content:"";
+    width: 0;
+    height: 0.3rem;
+    border-radius: 0.2rem;
+    position: absolute;
+    left: 3rem;
+    bottom: 0.8rem;
+    background-color: white;
+    transition: width 200ms ease-in;
+}
+
+.nav__listitem__settings:hover::after{
+    width: 45%;
+}
+
+.nav__listitem__settings::after ul {
+    width: 100%;
+}
+
+.nav__listitem::after{
+    content:"";
+    width: 0;
+    height: 0.3rem;
+    border-radius: 0.2rem;
+    position: absolute;
+    left: 3rem;
+    bottom: 0.8rem;
+    background-color: white;
+    transition: width 200ms ease-in;
+}
+
+.nav__listitem:hover::after{
+    width: 60%;
+}
+
+.nav_listitem::after ul {
+    width: 80%;
+}
+
+
+.nav__listitemdrop{
+    list-style: none;
+    position: absolute;
+    top: 3.5rem;
+    left: -1rem;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    background-color: ;
+    border-radius: 0.2rem;
+    width: 12rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity:0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out;
+    margin-top: 3px;
+}
+
+li{
+    list-style:none;
+    padding: 0.5rem 2rem;
+    border-radius: 0.2rem;
+    transition: background-color 200ms ease-in-out;
+}
+
+.study-methods:focus{
+    background-color: #a68af2;
+
+}
+
+
+.study-methods:hover{
+    background-color: #a68af2;
+}
+
+.main{
+    display: inline-block;
+    position: relative;
+    left: -100px;
+    white-space: nowrap;
+}
